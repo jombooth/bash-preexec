@@ -55,7 +55,7 @@ __bp_adjust_histcontrol() {
     if [[ "$histcontrol" == *"ignoreboth"* ]]; then
         histcontrol="ignoredups:${histcontrol//ignoreboth}"
     fi;
-    export HISTCONTROL="$histcontrol"
+    HISTCONTROL="$histcontrol"
 }
 
 # This variable describes whether we are currently in "interactive mode";
